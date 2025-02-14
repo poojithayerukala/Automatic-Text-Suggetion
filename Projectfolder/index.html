@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trie Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Trie Dictionary</h1>
+        
+        <div class="input-section">
+            <label for="word">Enter a Word:</label>
+            <input type="text" id="word" placeholder="Enter a word">
+            <button onclick="insertWord()">Insert Word</button>
+            <button onclick="checkWord()">Check Word</button>
+        </div>
+
+        <div class="result-section">
+            <h2>Word Frequency</h2>
+            <p id="word-frequency">Frequency of the word: </p>
+
+            <h2>Auto Suggestions</h2>
+            <input type="text" id="prefix" placeholder="Enter a prefix" oninput="suggestWords()">
+            <ul id="suggestions-list"></ul>
+
+            <h2>All Words in Trie</h2>
+            <ul id="all-words"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
